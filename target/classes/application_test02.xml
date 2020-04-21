@@ -4,11 +4,11 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 	
 	
-	<bean id="pc01" class="com.care.di_test02.PrintClass"/>
-	<bean id="oc01" class="com.care.di_test02.OperationClass"/>
-	<bean id="sc" class="com.care.di_test02.SaveClass">
-		<property name="pc" ref="pc01"/>
-		<property name="oc" ref="oc01"/>
+	<bean id="pc01" class="com.care.di_test02.PrintClass"/>		<!-- PrintClass 객체 pc01 생성 -->
+	<bean id="oc01" class="com.care.di_test02.OperationClass"/>	<!-- OperationClass 객체 oc01 생성 -->
+	<bean id="sc" class="com.care.di_test02.SaveClass">			<!-- SaveClass 객체 생성 -->
+		<property name="pc" ref="pc01"/>							<!-- SaveClass의 pc변수에 pc01객체 연결 -->
+		<property name="oc" ref="oc01"/>							<!-- SaveClass의 oc변수에 oc01객체 연결 -->
 	</bean>
 
 </beans>
