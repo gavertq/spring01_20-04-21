@@ -3,8 +3,13 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 	
+	<!-- PrintString 객체 ps01이라는 이름으로 생성 -->
 	<bean id="ps01" class="com.care.di_ex02test.PrintString"/>
+	
+	<!-- PrintBean 객체 pb라는 이름으로 생성 -->
 	<bean id="pb" class="com.care.di_ex02test.PrintBean">
+		<!-- 위에서 생성한 ps01 객체 연결. 
+			!PrintBean의 ps라는 변수에 ps01이라는 값을 넣어준다! -->	
 		<property name="ps" ref="ps01"/>
 	</bean>
 </beans>
