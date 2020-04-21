@@ -7,14 +7,14 @@ public class MainClass {
 		//STBean st = new STBean();
 		String config = "classpath:applicationST.xml";
 		GenericXmlApplicationContext ctx = new GenericXmlApplicationContext(config);
-		STBean st = ctx.getBean("stb",STBean.class);	//결과를 STBean st에 저장한다 = (applicationST.xml에서 생성한 stb 객체 가져옴, 그 객체의 클래스는 STBean이다)
+		STBean stBean = ctx.getBean("stb",STBean.class);	//결과를 STBean st에 저장한다 = (applicationST.xml에서 생성한 stb 객체 가져옴, 그 객체의 클래스는 STBean이다)
 		
-		st.setName("김두이");
-		st.setAge(25);
+		//stBean.setName("김서이");
+		//stBean.setAge(30);
 		//st.setSt(new Student());
 		
-		st.namePrint();
-		st.agePrint();
+		stBean.namePrint();
+		stBean.agePrint();
 		
 		//new없이 만든 객체로 안에 있는 기능(set과 출력메소드)사용 가능
 	}

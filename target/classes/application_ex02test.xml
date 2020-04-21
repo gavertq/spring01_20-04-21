@@ -2,14 +2,9 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-
-	<bean id="st01" class="com.care.di_ex02.Student"/>
-	<bean id="stb" class="com.care.di_ex02.STBean">
-		<property name="st" ref="st01"/>
-		<property name="name" value="김하나"/>
-		<property name="age">
-			<value>22</value>
-		</property>
+	
+	<bean id="ps01" class="com.care.di_ex02test.PrintString"/>
+	<bean id="pb" class="com.care.di_ex02test.PrintBean">
+		<property name="ps" ref="ps01"/>
 	</bean>
-
 </beans>

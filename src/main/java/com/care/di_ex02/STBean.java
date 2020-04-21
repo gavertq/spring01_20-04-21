@@ -3,10 +3,10 @@ package com.care.di_ex02;
 public class STBean {
 	private String name;
 	private int age;
-	private Student st;
+	private Student student;
 
-	public void namePrint() {st.namePrint(name);}	
-	public void agePrint() {st.agePrint(age);}
+	public void namePrint() {student.namePrint(name);}	
+	public void agePrint() {student.agePrint(age);}
 	
 	public String getName() {return name;}
 	public void setName(String name) {this.name = name;}
@@ -14,7 +14,7 @@ public class STBean {
 	public int getAge() {return age;}
 	public void setAge(int age) {this.age = age;}
 	
-	public Student getSt() {return st;}
-	public void setSt(Student st) {this.st = st;}
+	public Student getSt() {return student;}
+	public void setSt(Student student) {this.student = student;}
 	
 }
