@@ -12,6 +12,7 @@
 		<config>src/main/resources/application_test02.xml</config>
 		<config>src/main/resources/applicationPC.xml</config>
 		<config>src/main/resources/applicationCAR.xml</config>
+		<config>src/main/resources/application_Student.xml</config>
 	</configs>
 	<autoconfigs>
 		<config>src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml</config>

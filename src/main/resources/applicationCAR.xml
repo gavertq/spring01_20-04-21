@@ -3,6 +3,6 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-	<bean id="car" class="com.care.di_ex04.Controller02"/>	<!-- Controller를 01 -> 02로  여기서만 바꿔주면 나머지 class파일은 일일히 수정할게 없음-->
+	<bean id="car" class="com.care.di_ex04.Controller02"/>	<!-- Controller를 01 -> 02으로  여기서만 바꿔주면 나머지 class파일들은 일일히 수정할 필요 없음-->
 	
 </beans>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="pc01" class="com.care.di_test03.PrintClass"/>
+	<bean id="sc" class="com.care.di_test03.StudentClass">
+		<property name="pc" ref="pc01"/>
+		<property name="name" value="김하나"/>
+		<property name="food">
+			<list>
+				<value>아메리카노</value>
+				<value>카푸치노</value>
+				<value>바닐라라떼</value>
+			</list>
+		</property>
+	</bean>
+	
+</beans>
