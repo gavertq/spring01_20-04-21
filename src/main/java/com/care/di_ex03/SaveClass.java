@@ -11,7 +11,7 @@ public class SaveClass {
 	private HashMap<String, String> weather;	
 	
 	public SaveClass() {}	//xml파일에서 객체 생성할 때 발생할 수 있는 오류 방지
-	public SaveClass(String name, ArrayList<String> hobby, HashMap<String, String> weather) {
+	public SaveClass(String name, ArrayList<String> hobby, HashMap<String, String> weather) {//applicationPC.xml의 객체 sc02값 적용을 위함
 		this.name = name;
 		this.hobby = hobby;
 		this.weather = weather;
