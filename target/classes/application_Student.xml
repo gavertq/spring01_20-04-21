@@ -3,10 +3,18 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
+	<!-- PrintClass 객체, pc01 생성 -->
 	<bean id="pc01" class="com.care.di_test03.PrintClass"/>
+	
+	<!-- StudentClass 객체, sc 생성 -->
 	<bean id="sc" class="com.care.di_test03.StudentClass">
+		<!-- pc01 객체를 StudentClass의 pc에 연결 -->
 		<property name="pc" ref="pc01"/>
+		
+		<!-- name 초기화 -->
 		<property name="name" value="김하나"/>
+		
+		<!-- food 초기화 
 		<property name="food">
 			<list>
 				<value>아메리카노</value>
@@ -14,6 +22,8 @@
 				<value>바닐라라떼</value>
 			</list>
 		</property>
+		-->
+		
 	</bean>
 	
 </beans>

@@ -10,8 +10,7 @@ public class StudentClass implements Student {
 	
 	@Override
 	public void execute() {	//PrintClass의 출력 부분으로 이동하는 기능을 담당한다.
-		pc.print(name, food);
-	}
+		pc.print(name, food);}
 
 	public String getName() {return name;}
 	public void setName(String name) {this.name = name;}
