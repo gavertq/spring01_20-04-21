@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- PrintClass의 객체 pc 생성  -->
+	<bean id="pc" class="com.care.di_ex03.PrintClass"/>
+	
+	<!-- SaveClass의 객체 sc 생성  -->
+	<bean id="sc" class="com.care.di_ex03.SaveClass">
+		<property name="pc" ref="pc"/>
+		
+		<!-- name값 초기화 -->
+		<property name="name" value="하나"/>
+		
+		<!-- hobby값 초기화 -->
+		<property name="hobby">	
+			<list>
+				<value>영화</value>
+				<value>스포츠</value>
+			</list>
+		</property>
+		
+		<!-- weather값 초기화 -->
+		<property name="weather">
+			<map>
+				<entry key="오늘" value="강풍주의"/>
+				<entry key="내일" value="추운 기온"/>
+			</map>
+		</property>
+	</bean>
+
+	<!-- SaveClass의 객체 sc02 생성  -->
+	<bean id="sc02" class="com.care.di_ex03.SaveClass">
+		<property name="pc" ref="pc"/>
+		<!-- name 초기화 -->
+		<constructor-arg value="생성자 김하나"/>
+		<!-- hobby 초기화 -->
+		<constructor-arg>
+			<list>
+				<value>생성자 수영</value>
+				<value>생성자 배영</value>
+			</list>
+		</constructor-arg>
+		<!-- weather 초기화 -->
+		<constructor-arg>
+			<map>
+				<entry key="오늘" value="오늘 날씨"/>
+				<entry key="내일" value="내일 날씨"/>
+			</map>
+		</constructor-arg>
+	</bean>
+
+</beans>
