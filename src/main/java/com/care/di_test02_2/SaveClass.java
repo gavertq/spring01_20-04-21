@@ -1,4 +1,4 @@
-package com.care.di_test02;
+package com.care.di_test02_2;
 
 public class SaveClass {
 	private int num1, num2, result;	//입력받을 숫자1, 입력받을 숫자2, 결과값 변수
