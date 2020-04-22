@@ -25,6 +25,7 @@
 		-->		
 	</bean>
 	
+	<!-- StudentClass 객체, sc02 생성 -->
 	<bean id="sc02" class="com.care.di_test03.StudentClass">
 		<property name="pc" ref="pc01"/>
 		<constructor-arg value="김두이"/>
