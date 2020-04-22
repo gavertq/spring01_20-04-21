@@ -15,9 +15,11 @@ public class MainClass {
 		ArrayList<String> food = new ArrayList<String>();
 		food.add("1");		food.add("2");		food.add("3");		
 		sc.setFood(food);
-		//
-		
+		//		
 		sc.execute();
+		
+		StudentClass sc02 = ctx.getBean("sc02",StudentClass.class);
+		sc02.execute();
 	}
 
 }

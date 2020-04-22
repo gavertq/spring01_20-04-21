@@ -21,4 +21,10 @@ public class StudentClass implements Student {
 	public PrintClass getPc() {return pc;}
 	public void setPc(PrintClass pc) {this.pc = pc;}			
 	
+	
+	public StudentClass() {}	//application_Student.xml에서 객체 sc와 sc02 생성시 생길 오류 방지용
+	public StudentClass(String name, ArrayList<String> food) {	//객체 sc02 안에서 초기화한 변수값을 적용하기 위한 것.
+		this.name = name;
+		this.food = food;
+	}
 }
